@@ -197,9 +197,11 @@ a {
     border-bottom: 1px solid #3B3B3B;
     border-top: 1px solid #3B3B3B;
     position: relative; }
-  .nav__link:active {
+  .nav__link:active,
+  .nav__link:focus {
     color: #8D81AC; }
-  .nav__link:active::before {
+  .nav__link:active,
+  .nav__link:focus::before {
     position: absolute;
     content: "";
     width: 8px;

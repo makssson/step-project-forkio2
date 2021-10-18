@@ -200,7 +200,14 @@ a {
   .nav__link:active,
   .nav__link:focus {
     color: #8D81AC; }
-  .nav__link:active,
+  .nav__link:active::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 53px;
+    background: #8D81AC;
+    top: 15%;
+    left: 0%; }
   .nav__link:focus::before {
     position: absolute;
     content: "";

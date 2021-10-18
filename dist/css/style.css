@@ -41,7 +41,7 @@ a {
   color: black; }
 
 .hero {
-  background-image: url("/dist/img/hero-background.png");
+  background-image: url("../img/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -197,9 +197,11 @@ a {
     border-bottom: 1px solid #3B3B3B;
     border-top: 1px solid #3B3B3B;
     position: relative; }
-  .nav__menu-item:focus {
+  .nav__menu-item:focus,
+  .nav__menu-item:active {
     color: #8D81AC; }
-  .nav__menu-item:focus::before {
+  .nav__menu-item:focus,
+  .nav__menu-item:active::before {
     position: absolute;
     content: "";
     width: 8px;
@@ -238,7 +240,7 @@ a {
     line-height: 20px; } }
 
 .about {
-  background-image: url("/dist/img/about-background.png");
+  background-image: url("../img/about-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

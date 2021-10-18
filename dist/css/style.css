@@ -197,9 +197,9 @@ a {
     border-bottom: 1px solid #3B3B3B;
     border-top: 1px solid #3B3B3B;
     position: relative; }
-  .nav__link:focus {
+  .nav__link:active {
     color: #8D81AC; }
-  .nav__link:focus::before {
+  .nav__link:active::before {
     position: absolute;
     content: "";
     width: 8px;

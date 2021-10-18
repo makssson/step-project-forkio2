@@ -187,7 +187,6 @@ a {
   .nav__menu-button {
     margin: 0; }
   .nav__link {
-    padding: 29px 54px 21px 39px;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-size: 26px;
@@ -223,6 +222,7 @@ a {
   .nav__logo-name {
     display: none; }
   .nav__menu {
+    padding: 29px 50px 21px 39px;
     display: flex;
     flex-direction: column;
     position: absolute;

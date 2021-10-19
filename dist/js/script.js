@@ -6,9 +6,11 @@ const navMenu = document.querySelector('.nav__menu');
 
 
 
-burgerLines.addEventListener('click', function(elem) {
+document.addEventListener('click', function() {
 
-    if (burgerLines.getAttribute('data-active') === null) {
+    if (burgerLines.getAttribute('data-active') === null && event.target === burgerLines || 
+    event.target === firstBurgerLine || event.target === secondBurgerLine || event.target === thirdBurgerLine) {
+        
         firstBurgerLine.style.transform = 'rotate(44deg) translateY(11px)';
         firstBurgerLine.style.transition = '1.5s';
     
@@ -23,6 +25,25 @@ burgerLines.addEventListener('click', function(elem) {
         navMenu.style.transition = '1.5s';
 
         burgerLines.setAttribute('data-active', 'active');
+        console.log(event.target);
+        
+
+    } else if (event.target === navMenu) {
+        firstBurgerLine.style.transform = 'rotate(44deg) translateY(11px)';
+        firstBurgerLine.style.transition = '1.5s';
+    
+        secondBurgerLine.style.overflow = 'hidden';
+        secondBurgerLine.style.transform = 'translateX(-600%)';
+        secondBurgerLine.style.transition = '1.5s';
+    
+        thirdBurgerLine.style.transform = 'rotate(-45deg) translateY(-11px)';
+        thirdBurgerLine.style.transition = '1.5s';
+
+        navMenu.style.left = '3.5%';
+        navMenu.style.transition = '1.5s';
+
+        burgerLines.setAttribute('data-active', 'active');
+        console.log(event.target);
     } else {
         firstBurgerLine.removeAttribute('style');
         firstBurgerLine.style.transition = '1.5s';

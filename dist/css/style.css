@@ -125,7 +125,7 @@ a {
   border-radius: 40px;
   background: #8b7caf;
   padding: 11px 20px;
-  margin-left: 49px;
+  margin-left: 54px;
   margin-right: 90px; }
 
 .button__wrapper {
@@ -201,7 +201,7 @@ a {
     position: relative; }
   .nav__link {
     color: #fff}
-  .nav__link:active,
+  /* .nav__link:active,
   .nav__link:focus {
     color: #8D81AC; }
   .nav__link:active::before {
@@ -219,7 +219,7 @@ a {
     height: 53px;
     background: #8D81AC;
     top: 15%;
-    left: 0%; }
+    left: 0%; } */
   .nav__menu-item:nth-child(4) {
     padding-right: 5em; }
   .nav__logo {

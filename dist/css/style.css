@@ -220,9 +220,9 @@ a {
     border-bottom: 1px solid #3B3B3B;
     border-top: 1px solid #3B3B3B;
     position: relative; }
-  .nav__menu-item:active {
+  .nav__menu-item:hover {
     color: #8D81AC; }
-  .nav__menu-item:active::before {
+  .nav__menu-item:hover::before {
     position: absolute;
     content: "";
     width: 8px;

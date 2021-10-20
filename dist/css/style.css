@@ -220,9 +220,13 @@ a {
     border-bottom: 1px solid #3B3B3B;
     border-top: 1px solid #3B3B3B;
     position: relative; }
-  .nav__menu-item:hover {
+  .nav__menu-item:hover,
+  .nav__menu-item:focus,
+  .nav__menu-item:active {
     color: #8D81AC; }
-  .nav__menu-item:hover::before {
+  .nav__menu-item:hover::before,
+  .nav__menu-item:focus::before,
+  .nav__menu-item:active::before {
     position: absolute;
     content: "";
     width: 8px;
